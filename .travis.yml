@@ -1,4 +1,6 @@
 language: java
+before_install:
+    ant --help
 install:
     ant -f continuousintegration.xml -lib ./lib
 after_script:
