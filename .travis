@@ -1,5 +1,0 @@
-language: java
-install:
-    ant -b continuousintegration.xml -lib ./lib
-after_script:
-    echo OK
