@@ -3,5 +3,7 @@ before_install:
     ant --help
 install:
     ant -f continuousintegration.xml -lib ./lib
+script:
+    ant -f continuousintegration.xml test
 after_script:
     echo OK
